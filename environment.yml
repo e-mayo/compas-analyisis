@@ -1,0 +1,24 @@
+name: compas
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # python
+  - python=3.8.15
+  # chemistry data handlers
+  - rdkit=2022.09.4
+  - mols2grid
+  # data handlers
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  # ide
+  - jupyter
+  - tqdm
+  # data visualization
+  - seaborn
+  - matplotlib
+  # xtb only available on linux/osx
+  # - xtb=6.5.1
+  - dask
