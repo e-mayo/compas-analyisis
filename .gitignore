@@ -163,3 +163,4 @@ cython_debug/
 
 # ignore any .temp folder wherever it is located
 **/.temp
+**/.tempdata
