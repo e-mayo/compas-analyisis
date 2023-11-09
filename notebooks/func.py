@@ -331,7 +331,9 @@ def get_generc_scaffold_smiles(mol: Chem.Mol) -> str:
     scaffold = get_generic_murcko(scaffold)
     return mol_to_smiles(scaffold)
 
-def calc_atomisation_energy(dataframe:pd.DataFrame, per_electron:bool=False) -> pd.Series:
+def calc_atomisation_energy(dataframe:pd.DataFrame, 
+                            energy_col:str='energy',
+                            per_electron:bool=False) -> pd.Series:
     au2kcal = 627.50957099203276
     B_ene =  -24.611392160184
     C_ene =  -37.791549361285
@@ -359,7 +361,7 @@ def calc_atomisation_energy(dataframe:pd.DataFrame, per_electron:bool=False) -> 
     + dataframe['o']*O_ele 
     + dataframe['s']*S_ele)
 
-    atomization_energy = atomic_coontribution - dataframe['energy']
+    atomization_energy = atomic_coontribution - dataframe[energy_col]
     # to kcal
     atomization_energy *= au2kcal
     # normalize 
