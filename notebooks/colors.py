@@ -5,6 +5,11 @@ colors = [
         [1, "#730B6E"], # 
             ]
 cmap = matplotlib.colors.LinearSegmentedColormap.from_list("", colors)
+colors = [
+        [0, "#570000"], # 
+        [1, "#00D5FF"], # 
+            ]
+cmap = matplotlib.colors.LinearSegmentedColormap.from_list("", colors)
 
 
 heterocycles_colors = {
