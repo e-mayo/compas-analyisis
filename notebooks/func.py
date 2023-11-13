@@ -12,7 +12,7 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
 from rdkit.Chem.Scaffolds import MurckoScaffold
 
-from typing import List, Tuple, Any, Dict
+from typing import List, Tuple, Any, Dict, Union
 
 def mol_from_smiles(smi):
     return Chem.MolFromSmiles(smi)
