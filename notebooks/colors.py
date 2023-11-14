@@ -12,16 +12,16 @@ cmap = matplotlib.colors.LinearSegmentedColormap.from_list("", colors)
 
 
 heterocycles_colors = {
-    'benzene':'#686868',            # aromatic
-    'cyclobutadiene':'#686868',     # antiaromatic
-    'borole':'#00D8C9',             # antiaromatic
-    'borinine':'#00B5A9',           # aromatic
-    '14diborinine':'#00948B',       # aromatic 
-    'dhdiborinine':'#00746D',       # antiaromatic
-    'pyrrole':'#0099FF',            # aromatic
-    'pyridine':'#077AD5',           # aromatic
-    'pyrazine':'#015CAC',           # aromatic
-    'furan':'#CF252E',              # aromatic
-    'thiophene':'#FBD55C',          # aromatic
+    'benzene':'#E1E1E1',            # aromatic
+    'cyclobutadiene':'#9E9E9E',     # antiaromatic
+    'borole':'#C7EBE6',             # antiaromatic
+    'borinine':'#00665D',           # aromatic
+    '14diborinine':'#34988F',       # aromatic 
+    'dhdiborinine':'#80CDC2',       # antiaromatic
+    'pyrrole':'#93C6DF',            # aromatic
+    'pyridine':'#2066AC',           # aromatic
+    'pyrazine':'#4294C3',           # aromatic
+    'furan':'#E44591',              # aromatic
+    'thiophene':'#F9D55C',          # aromatic
 
 }
