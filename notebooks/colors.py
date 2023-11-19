@@ -25,3 +25,9 @@ heterocycles_colors = {
     'thiophene':'#F9D55C',          # aromatic
 
 }
+
+kde_kwargs = {'palette':cmap,
+            'alpha':0.4,
+            'edgecolor':'#212121',
+            'common_norm':False,
+}
