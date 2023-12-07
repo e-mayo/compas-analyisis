@@ -28,8 +28,8 @@ heterocycles_colors = {
 atoms_colors = {
     # 'h':'#E1E1E1',            # aromatic
     # 'c':'#9E9E9E',     # antiaromatic
-    'b':'#C7EBE6',             # antiaromatic
-    'n':'#93C6DF',            # aromatic
+    'b':'#00665D',             # antiaromatic
+    'n':'#2066AC',            # aromatic
     'o':'#E44591',              # aromatic
     's':'#F9D55C',          # aromatic
 
