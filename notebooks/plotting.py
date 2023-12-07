@@ -20,3 +20,21 @@ def plotlineplot_properties_hued_by(dataset, x, props, remove_legend=False, **kw
     fig.suptitle(f"Grouped by {x}")
     plt.tight_layout()
     return fig, axs
+
+
+def plotkde_properties_hued_by(dataset, props, hue, remove_legend=False, **kwargs):
+    fig, axs = plt.subplots(2, 3, figsize=(15, 5))
+    axs = axs.flatten()
+    for i, prop in enumerate(props):
+        sns.kdeplot(data=dataset, x=prop, 
+                    fill=True,
+                    hue=hue,
+                    warn_singular=False,
+                    ax=axs[i],
+                    **kwargs
+                    )
+        if remove_legend: axs[i].legend_.remove()
+        remove_legend = True
+    fig.suptitle(f"Color by {hue}")
+    plt.tight_layout()
+    return fig, axs
